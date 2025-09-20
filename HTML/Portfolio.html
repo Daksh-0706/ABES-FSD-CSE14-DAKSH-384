@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="IMG_9597 copy.JPG">
+    <style>
+        h1{
+            height: 50px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            background-color: #333;
+            overflow: scroll;
+            white-space: nowrap;
+            overflow-y: scroll;
+            text-overflow: ellipsis;
+
+        }
+        .navbar a{
+            display: inline-block;
+            color: rgb(230, 230, 230);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .navbar a:hover{
+            background-color: #573357;
+            color: yellowgreen;
+        }
+        .navbar a.active {
+            background-color: rebeccapurple;
+            color: azure;
+        }
+        body{
+            background-color: white;
+            color:black;
+        }
+        @media screen and (orientation:landscape ){
+        }
+        @media only screen and (max-width:600px)
+        {
+            body{
+                background-color: white;
+                color:black;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        body {
+            animation: bgColorChange 5s infinite alternate;
+        }
+        @keyframes bgColorChange {
+            from { background-color: white; }
+            to { background-color: #e0c3fc; }
+        }
+        #about_me{
+            font-size: 30px;
+            clear: both;
+            margin-left: 20px;
+        }
+
+        #projects{
+            font-size: 30px;
+        }
+        #projects ul li{
+            font-size: 25px;
+            list-style-type: disc;
+            margin-left: 40px;
+
+        }
+        #skills ul li{
+            font-size: 25px;
+            list-style-type: disc;
+            margin-left: 40px;
+        }
+        #skills{
+            font-size: 30px;
+        }
+        #me{
+            font-size: 20px;
+        }
+        #contact{
+            font-size: 25px;
+            margin-left: 4px;
+        }
+        .large{
+            width: 600px;
+        }
+        .large1{
+            width: 600px;
+        }
+        .large2{
+            background-color: green;
+            font-size: 25px;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center"><u><b>MY PORTFOLIO</u></b></h1>
+    <hr>
+    <header>
+        <div class="boxes">
+        <div class="navbar">
+        <a href="#Home" class="active">Home</a>
+        <a href="#about me">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+        </div>
+    </header>
+    <img src="myphoto.jpg" alt="My photo" width="200px" height="200px" style="float :right; border-radius:8px;">
+    <br>
+    <section id="about_me">
+    <h2 align="center"><u>About me</u></h2>
+    <br>
+      <p>Hello! I'm <b><i>Daksh</i></b> in ABES Engineering College. Currently, I am pursuing an undergraduate degree in B.Tech in computer science and engineering. My interest in the field of <em>Full Stack Development.</em></p>
+      <p>Currenty i am trying to learn HTML, as I am not so professional in this, and looking forward to work more.</p>
+      <br>
+    </section>
+    <hr>
+    <section id="skills">
+        <h1 align="center"><u><b>Technical Skills</b></u></h1>
+        <br>
+        <ul>
+            <li>Currently Learning HTML to be more efficient.</li>
+            <li>Skilled in Python for scripting, logic building, and problem-solving</li>
+            <li>Experienced with C programming including data structures and algorithms</li>
+            <li>Microsoft Office Suite (Word, PowerPoint, Outlook, Excel):-proficient in document creation, presentation design, email management, and basic data handling.</li>
+        </ul>
+    </section>
+    <hr>
+    <section id="projects">
+    <h1 align="center"><u><b>Projects</b></u></h1>
+    <br>
+    <ul>
+        <li>Registeration Form</li>
+        <li>Portfolio</li>
+        <li>My Webpage(My First One)</li>
+    </ul>
+    </section>
+    <hr>
+    <section id="education">
+      <h2><b>Education</b></h2>
+      <h1 align="center">Daksh's Academic Qualifications</h1>
+      <table border="1" width="80%" align="center"
+    cellpading="8" cellspacing="0" bgcolor="lightcyan">
+        <tr bgcolor="lightgrey">
+          <th>S.No.</th>
+          <th>Class</th>
+          <th>Board</th>
+          <th>percentage</th>
+          <th>Division</th>
+        </tr>
+        <tr align="center">
+          <td>1</td>
+          <td>10th</td>
+          <td>CBSE</td>
+          <td>81%</td>
+          <td>1st</td>
+        </tr>
+        <tr align="center">
+          <td>2</td>
+          <td>12th</td>
+          <td>CBSE</td>
+          <td>75%</td>
+          <td>1st</td>
+        </tr>
+        <tr align="center">
+          <td>3</td>
+          <td>B.Tech</td>
+          <td>AKTU</td>
+          <td>Currently Pursuing</td>
+          <td>-</td>
+        </tr>
+      </table>
+    </section
+    <hr>
+    <div id="me">
+    <h1 align="center"><u><b>Contact Me</b></u></h1>
+    <br>
+    </div>
+    <div id="contact">
+    <section id="contact">
+      <ul>
+        <li>Linkedin: <a href="www.linkedin.com/in/daksh-872a35211">My Linkedin</a></p></li>
+        <li><p>Contact No. 8383034431</p></li>
+        <li><p>EMAIL: <a href="mailto:dakshkumar1002@gmail.com">dakshkumar1002@gmail.com</a></p>
+      </ul>
+    </section>
+    <form>
+      Feedback Form:<br>
+      Your Name: <br>
+      <input type="text"><br>
+      Your Email: <br>
+      <input type="email"><br>
+      Your Feedback: <br>
+      <textarea name="feedback" rows="5" cols="30"></textarea><br>
+      <button>Submit</button>
+      <button>Reset</button><br>
+      <span>Thank You for Visiting My Portfolio</span>
+    </form>
+    </div>
+    </div>
+</body>
+</html>

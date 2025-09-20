@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+    <style>
+      body {
+        font-family:  Arial, Helvetica, sans-serif;
+      }
+    h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2><marquee direction="left" behaviour="alternate" scrollamount="10" width="700" height="50">Student Registration Form </marquee></h2>
+  <form>
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br><br><label for="email">Email:</label><br>
+<input type="email" id="email" name="email" required><br><br>
+
+<label for="password">Password:</label><br>
+<input type="password" id="password" name="password" required><br><br>
+
+<label for="confirmpassword">Confirm Password:</label><br>
+<input type="password" id="confirmpassword" name="confirmpassword" required><br><br>
+
+<label>Gender:</label><br>
+<input type="radio" id="male" name="gender" value="Male"> Male
+<input type="radio" id="female" name="gender" value="Female"> Female
+<input type="radio" id="other" name="gender" value="Other"> Other<br><br>
+
+<label>Hobbies:</label><br>
+<input type="checkbox" name="hobby" value="Reading"> Reading
+<input type="checkbox" name="hobby" value="Sports"> Sports
+<input type="checkbox" name="hobby" value="Music"> Music
+<input type="checkbox" name="hobby" value="Traveling"> Traveling<br><br>
+
+<label for="course">Course Selection:</label><br>
+<select id="course" name="course">
+  <option value="btech">B.Tech</option>
+  <option value="bca">BCA</option>
+  <option value="mtech">M.Tech</option>
+  <option value="mca">MCA</option>
+</select><br><br>
+
+<label for="address">Address:</label><br>
+<textarea id="address" name="address" rows="5" cols="50"></textarea><br><br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+  </form>
+</body>
+</html>

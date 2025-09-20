@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Events</title>
+    <style>
+        body{
+            background-color: white;
+            color:black;
+        }
+        .navbar{
+            background-color: #573357;
+            overflow: scroll;
+            white-space: nowrap;
+            overflow-y: scroll;
+            text-overflow: ellipsis;
+
+        }
+        .navbar a{
+            display: inline-block;
+            color: rgb(230, 230, 230);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .navbar a:hover{
+            background-color: rebeccapurple;
+            color: yellowgreen;
+        }
+        .navbar a.active {
+            background-color: rebeccapurple;
+            color: azure;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <div class="boxes">
+        <div class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+        </div>
+    </header>
+<table border="1" cellpadding="5" cellspacing="0" style="width:100%; border-collapse: collapse; margin-top: 20px;">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Event</th>
+      <th>Time</th>
+      <th>Venue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Oct 1, 2025</td>
+      <td>Jamming</td>
+      <td>10:00 AM</td>
+      <td>Main Hall</td>
+    </tr>
+    <tr>
+      <td>Cultural Dance</td>
+      <td>2:00 PM</td>
+      <td>Auditorium</td>
+    </tr>
+    <tr>
+      <td>Oct 5, 2025</td>
+      <td colspan="3">Annual Fest (Full Day)</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<br>
+
+<img src="event1.jpg" width="400" height="300px" hspace="25px" style="float :left;">
+<img src="event2.jpg" width="400" height="300px" hspace="25px" style="float :center;">
+<img src="event3.jpg" width="400" height="300px" hspace="25px" style="float :center;">
+<p>
+    For more details, contact us at <a href="contact.html">Contact Page</a>.
+</p>
 </body>
 </html>
